@@ -76,7 +76,7 @@ app.post('/login', async (req, res) => {
     const newUser = new User({ username, password, email });
     await newUser.save();
 
-    res.status(201).json({ message: 'Thnkyou for registering for early access.' });
+    res.status(201).json({ message: 'App still under Beta testing, thankyou for registering for early access ~ Team Bungii' });
   } catch (error) {
     res.status(500).json({ message: 'Server error. Please try again later.' });
   }
