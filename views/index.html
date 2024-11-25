@@ -99,7 +99,7 @@
                 const result = await response.json();
                 if (response.ok) {
                     alert(result.message); // Message from server on successful login
-                    window.location.href = '/dashboard'; // Redirect to dashboard or homepage on success
+                    window.location.href = '/'; // Redirect to dashboard or homepage on success
                 } else {
                     alert(result.message); // Show error message from the server
                 }
